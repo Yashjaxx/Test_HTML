@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Tag</title>
+</head>
+<body>
+    <center>
+    <h1>FORM TAG</h1>
+
+    <!--Form Tag-->
+    <form action="/submit.php" method="post">
+
+        <!--Label Tag-->
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your name" required><br><br>
+
+        Age: <input type="number" placeholder="Enter your age"><br><br>
+        Password: <input type="password"><br><br>
+        Email: <input type="email" placeholder="Enter your email"><br><br>
+        Phone: <input type="number" placeholder="Enter your Phone no"><br><br>
+
+        <label for="date">DOB:</label>
+        <input type="date" id="date"><br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file"><br><br>
+
+        <label for="colour">Choose Color:</label>
+        <input type="color" id="colour"><br><br>
+
+        <label for="rang">Choose your range</label>
+        <input type="range" id="rang"><br><br>
+
+       
+        <input type="button" value="Click me" ><br><br>
+
+        <input type="submit">
+    </form>
+    </center>
+     <script>
+        const colorPicker = document.getElementById('colour');
+        colorPicker.addEventListener('input', function () {
+            document.body.style.backgroundColor = colorPicker.value;
+        });
+    </script>
+</body>
+</html>
